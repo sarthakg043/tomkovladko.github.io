@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GympelPizza Rožňava"">
+    <meta name="author" content="Vladimír Tomko">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="data:image/x-icon;base64,AAABA  AEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQAAADUAAAAeAAAACwAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCT2vn/gdP5/wAAAGYAAABMAAAAKQAAAA4AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1Ov+/6bs/v+S5P3/WZr4/xw78/8XUXOcAAAAQAAAABEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs7o/v8jPav/Sne8/32X+f/c7f//Pz/z/7Hj/f8QUXaWAAAANAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAb3+7//wURcP/f7v//GUGI/97u/v+OptH/pt37/yW8+f8AAAA8AAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzo/v/O6///AwPw/wMD8P/d7v7/FiWU/wMGc/8csfD/nt38/wAAAEYAAAARAAAAAQAAAAAAAAAAAAAAAAAAAAIFHQtByer5/9/u///X7Pn/3O3//9/u///X6f7/er36/wMD8P+M2vz/ARQgbgAAACYAAAACAAAAAAAAAAAAAAAAAAAABTm89/8BAm7/GCmh/9nt///T6/r/seH7/6fR7v8DA/H/UlL0/wa9+f8EqPX/AAAAOAAAAAQAAAAAAAAAAAAAAAAAAAAwmsL7/97t/f/N6e3/3u3+/6vR9v96wsH/lcTw/xAak/970/n/ZMz3/wWv9/8AAAAbAAAAAAAAAAAAAAAAAAAAFN/u///X6v7/2+z+/wgMgP+PrtT/p971/5XU7/+Du/r/e9P5/wSe7v8EqvX/AAAANwAAAAAAAAAAAAAAAAAAAALD5f7/1uz2/93t/P/f7v//vOX+/6zg/f+b2/v/A5Ts/y669v9b2P3/b9f7/yhQZmMAAAAAAAAAAAAAAAAAAAAAAAAAIMHk/f98yPn/B5rx/2TT/P8/0Pz/XNj9/33h/f+i6/7/xPL+/6Pg+/8AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgbsff/PMv7/1TQ+/9izPn/Wb306QAAAA4AAAAIAAAABQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AACf/wAAgf8AAIB/AADAPwAAwB8AAOAPAADgAwAA8AEAAPABAADwAQAA+AEAAPg/AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Pizza</title>
+    <style>
+        .card{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">GympelPizza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="nase_pizze.html">Naše Pizze<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="kontakt.html">Kontakt<span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-success btn-lg">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    <!--Header-->
+    <div id="header" class="jumbotron bg-transparent img-fluid text-center">
+        <h1 id="nadpis" class="display-1">Naše Pizze</h1>
+        <hr class="my-4">
+        <p id="nadpis1" class="lead">Príďte si pochutnať!</p>
+    </div>
+    <!--Rows-->
+    <div class="container">
+        <div class="row" id="center_pizza">
+            <div class="col-lg-12 col-md-12">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h1 id="text" class="card-title">Šunková</h1>
+                        <img id="fotka" class="card-img-top img-fluid" src="https://www.pizzagiovanni.sk/wp-content/uploads/sunkova.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="page-footer font-small cyan darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pt-3 text-center">
+                    <div class="mb-5 flex-center">
+                        <a href="https://www.facebook.com/vladimir.tomko.144" class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/tomkovladko6" class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a href="https://www.instagram.com/vlado.tomko/" class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center pb-3">
+            © 2020 Copyright:
+            <a id="copy" href="https://sk.linkedin.com/in/tomkovladko?trk=people-guest_people_search-card">Vlado Tomko</a>
+        </div>
+    </footer>
+</body>
+</html>
