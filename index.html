@@ -52,7 +52,9 @@ function kupitChroizo(){
     cena+=4.3
 }
 function nakup(){
-    alert("Tvoje nakúpené pizze: \n\nŠunková :"+sunka+"\nŠampiňónová :"+sampion+"\nHawaii :"+hawaii+"\nVegetariánska :"+vegetarianska+"\nMexická :"+mexicka+"\nChorizo :"+chorizo+"\n\n\n Celková cena je " + cena + " €")
+    cast = document.getElementById("modal-body")
+    cast.innerHTML = "Tvoje nakúpené pizze:<br><br>Šunková :"+sunka+"<br>Šampiňónová :"+sampion+"<br>Hawaii :"+hawaii+"<br>Vegetariánska :"+vegetarianska+"<br>Mexická :"+mexicka+"<br>Chorizo :"+chorizo+"<br><br>Celková cena je " + cena + " €"
+    
 }
 </script>
    <style>
@@ -79,12 +81,34 @@ function nakup(){
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <button onclick="nakup()" type="button" class="btn btn-success btn-lg">
-                <i class="fas fa-shopping-cart"></i>
-            </button>
+              <!-- Button trigger modal -->
+<button onclick="nakup()" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+    <i class="fas fa-shopping-cart"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nákupný košík</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="modal-body" class="modal-body">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-md">Pokračuj v nákupe</button>
+          <button type="button" class="btn btn-secondary bt-lg" data-dismiss="modal">Zavri</button>
+        </div>
+      </div>
+    </div>
+  </div>
           </form>
         </div>
-      </nav>
+    </nav>
     <!--Header-->
     <div id="header" class="jumbotron bg-transparent img-fluid text-center">
         <h3 id="nadpis" class="display-2">GympelPizza</h3>
