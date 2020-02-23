@@ -12,7 +12,50 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><title>Pizza</title>
-    <style>
+<script>
+        var cena = 0
+        var sunka = 0
+        var sampion = 0
+        var hawaii = 0
+        var vegetarianska = 0
+        var mexicka = 0
+        var chorizo = 0
+        pizze=[]
+function kupitSunkovu(){
+    sunka+=1
+    pizze.push("Šunková")
+    cena+=4.3
+}
+function kupitSampionovu(){
+    sampion+=1
+    pizze.push("Šampiňónová")
+    cena+=5
+}
+function kupitHawaii(){
+    hawaii+=1
+    pizze.push("Hawaii")
+    cena+=4
+}
+function kupitVegetarian(){
+    vegetarianska+=1
+    pizze.push("Vegetariánska")
+    cena+=3.9
+}
+function kupitMexiko(){
+    mexicka+=1
+    pizze.push("Mexická")
+    cena+=4.1
+}
+function kupitChroizo(){
+    chorizo+=1
+    pizze.push("Chroizo")
+    cena+=4.3
+}
+function nakup(){
+    alert("Tvoje nakúpené pizze: \n\nŠunková :"+sunka+"\nŠampiňónová :"+sampion+"\nHawaii :"+hawaii+"\nVegetariánska :"+vegetarianska+"\nMexická :"+mexicka+"\nChorizo :"+chorizo+"\n\n\n Celková cena je " + cena + " €")
+}
+</script>
+   <style>
         #nadpis{
             font-size: 65px;
         }
@@ -36,7 +79,7 @@
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-success btn-lg">
+            <button onclick="nakup()" type="button" class="btn btn-success btn-lg">
                 <i class="fas fa-shopping-cart"></i>
             </button>
           </form>
@@ -64,7 +107,7 @@
                                 <li>syr</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitSunkovu()" class="btn btn-outline-success btn-sm">Pridaj do košíka (4,30€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
@@ -85,7 +128,7 @@
                                 <li>šampiňóny</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitSampionovu()" class="btn btn-outline-success btn-sm">Pridaj do košíka(5€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
@@ -106,7 +149,7 @@
                                 <li>ananás</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitHawaii()" class="btn btn-outline-success btn-sm">Pridaj do košíka(4€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
@@ -130,7 +173,7 @@
                                 <li>paprika</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitVegetarian()" class="btn btn-outline-success btn-sm">Pridaj do košíka(3,90€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
@@ -154,7 +197,7 @@
                                 <li>kukurica</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitMexiko()" class="btn btn-outline-success btn-sm">Pridaj do košíka(4,10€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
@@ -174,7 +217,7 @@
                                 <li>chorizo</li>
                             </ul>
                         </p>
-                        <a href="#" class="btn btn-outline-success btn-sm">Pridaj do košíka</a>
+                        <a onclick="kupitChroizo()" class="btn btn-outline-success btn-sm">Pridaj do košíka(4,30€)</a>
                         <a href="#" class="btn btn-outline-danger btn-sm">Obľúbená
                             <i class="far fa-bookmark"></i>
                         </a>
